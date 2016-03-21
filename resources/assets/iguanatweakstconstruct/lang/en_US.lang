@@ -1,12 +1,12 @@
-mininglevel.stone=01-Stone
-mininglevel.copper=02-Copper
-mininglevel.iron=03-Iron
-mininglevel.tin=04-Tin
-mininglevel.redstone=05-Redstone
-mininglevel.obsidian=06-Obsidian
-mininglevel.ardite=07-Ardite
-mininglevel.cobalt=08-Cobalt
-mininglevel.manyullyn=09-Manyullyn
+mininglevel.stone=00-Stone
+mininglevel.copper=01-Copper
+mininglevel.iron=02-Iron
+mininglevel.tin=03-Tin
+mininglevel.redstone=04-Redstone
+mininglevel.obsidian=05-Obsidian
+mininglevel.ardite=06-Ardite
+mininglevel.cobalt=07-Cobalt
+mininglevel.manyullyn=08-Manyullyn
 
 message.levelup.1=You are just abusing your %s.
 message.levelup.2=Hey my %s is dented!
