@@ -3,7 +3,6 @@ package iguanaman.iguanatweakstconstruct.claybuckets;
 import cpw.mods.fml.common.eventhandler.Event;
 import cpw.mods.fml.common.eventhandler.EventPriority;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import mods.railcraft.common.plugins.forge.WorldPlugin;
 import net.minecraft.block.Block;
 import net.minecraft.entity.passive.EntityCow;
 import net.minecraft.entity.player.EntityPlayer;
@@ -44,7 +43,7 @@ public class ClayBucketHandler {
     @SubscribeEvent(priority = EventPriority.HIGHEST)
     public void bucketFill (FillBucketEvent event){
         if (event.current.getItem() == IguanaItems.clayBucketFired && event.target.typeOfHit == MovingObjectPosition.MovingObjectType.BLOCK) {
-            Block block = WorldPlugin.getBlock(event.world, event.target.blockX, event.target.blockY, event.target.blockZ);
+            Block block = event.world.getBlock(event.target.blockX, event.target.blockY, event.target.blockZ);
             if (Block.isEqualTo(block, Block.getBlockFromName("tile.blockFuel")) ||
                     Block.isEqualTo(block, Block.getBlockFromName("tile.blockOil")) ||
                     Block.isEqualTo(block, Block.getBlockFromName("tile.railcraft.fluid.creosote"))) {
