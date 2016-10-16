@@ -1,7 +1,10 @@
 package iguanaman.iguanatweakstconstruct.claybuckets;
 
 import cpw.mods.fml.common.eventhandler.Event;
+import cpw.mods.fml.common.eventhandler.EventPriority;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import javafx.scene.layout.Priority;
+import mods.railcraft.common.plugins.forge.WorldPlugin;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.passive.EntityCow;
@@ -11,13 +14,13 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraftforge.event.entity.player.EntityInteractEvent;
 import net.minecraftforge.event.entity.player.FillBucketEvent;
+import net.minecraftforge.fluids.FluidRegistry;
 import tconstruct.smeltery.TinkerSmeltery;
 
 public class ClayBucketHandler {
     // milking cows
     @SubscribeEvent
-    public void EntityInteract(EntityInteractEvent event)
-    {
+    public void EntityInteract(EntityInteractEvent event){
         if(event.target == null || !(event.target instanceof EntityCow))
             return;
         if(event.entityPlayer == null)
@@ -41,11 +44,20 @@ public class ClayBucketHandler {
     }
 
     // filling buckets with molten metal, same behaviour as regular buckets from TConstruct, but with clay buckets
-    @SubscribeEvent
-    public void bucketFill (FillBucketEvent event)
-    {
-        if (event.current.getItem() == IguanaItems.clayBucketFired && event.target.typeOfHit == MovingObjectPosition.MovingObjectType.BLOCK)
-        {
+    @SubscribeEvent(priority = EventPriority.HIGHEST)
+    public void bucketFill (FillBucketEvent event){
+        if (event.current.getItem() == IguanaItems.clayBucketFired && event.target.typeOfHit == MovingObjectPosition.MovingObjectType.BLOCK) {
+            Block block = WorldPlugin.getBlock(event.world, event.target.blockX, event.target.blockY, event.target.blockZ);
+            if (Block.isEqualTo(block, Block.getBlockFromName("tile.blockFuel")) ||
+                    Block.isEqualTo(block, Block.getBlockFromName("tile.blockOil")) ||
+                    Block.isEqualTo(block, Block.getBlockFromName("tile.railcraft.fluid.creosote"))) {
+                event.result = new ItemStack(IguanaItems.clayBucketFired);
+                event.setResult(Event.Result.DENY);
+                if (event.isCancelable()) {
+                    event.setCanceled(true);
+                }
+            }
+
             if(event.getResult() != Event.Result.DEFAULT)
                 return;
             
