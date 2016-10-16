@@ -9,9 +9,6 @@ import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.StatCollector;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
-import net.minecraftforge.event.entity.player.UseHoeEvent;
-
-import java.util.Set;
 
 public class VanillaToolNerfHandler {
     @SubscribeEvent

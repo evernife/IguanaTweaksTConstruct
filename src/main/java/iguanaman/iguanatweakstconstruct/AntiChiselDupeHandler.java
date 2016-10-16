@@ -1,9 +1,8 @@
 package iguanaman.iguanatweakstconstruct;
 
-import net.minecraft.item.ItemStack;
-
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.PlayerEvent;
+import net.minecraft.item.ItemStack;
 import tconstruct.tools.TinkerTools;
 
 public class AntiChiselDupeHandler {

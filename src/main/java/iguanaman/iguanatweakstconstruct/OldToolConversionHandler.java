@@ -12,12 +12,7 @@ import iguanaman.iguanatweakstconstruct.util.Log;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
-
-import java.util.Arrays;
-import java.util.UUID;
-
 import tconstruct.armor.player.TPlayerStats;
-import tconstruct.items.tools.Arrow;
 import tconstruct.items.tools.Hammer;
 import tconstruct.items.tools.Pickaxe;
 import tconstruct.library.TConstructRegistry;
@@ -26,8 +21,10 @@ import tconstruct.library.tools.DualMaterialToolPart;
 import tconstruct.library.tools.ToolCore;
 import tconstruct.tools.TinkerTools;
 import tconstruct.util.config.PHConstruct;
-import tconstruct.weaponry.TinkerWeaponry;
 import tconstruct.weaponry.ammo.BoltAmmo;
+
+import java.util.Arrays;
+import java.util.UUID;
 
 public class OldToolConversionHandler {
     // todo: re-enable when this stuff is 100% reliable >_<

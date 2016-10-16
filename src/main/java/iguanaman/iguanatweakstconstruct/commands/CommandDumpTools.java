@@ -1,19 +1,15 @@
 package iguanaman.iguanatweakstconstruct.commands;
 
-import cpw.mods.fml.common.registry.GameRegistry;
 import iguanaman.iguanatweakstconstruct.util.Log;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.ICommandSender;
-import net.minecraft.init.Items;
 import net.minecraft.item.*;
 import net.minecraft.util.ChatComponentText;
-import net.minecraftforge.oredict.OreDictionary;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.Collections;
-import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 

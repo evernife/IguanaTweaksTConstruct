@@ -2,18 +2,15 @@ package iguanaman.iguanatweakstconstruct.override;
 
 import iguanaman.iguanatweakstconstruct.harvestlevels.HarvestLevelTweaks;
 import iguanaman.iguanatweakstconstruct.reference.Config;
-import iguanaman.iguanatweakstconstruct.reference.Reference;
 import iguanaman.iguanatweakstconstruct.util.HarvestLevels;
 import iguanaman.iguanatweakstconstruct.util.Log;
 import net.minecraft.block.Block;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.config.ConfigCategory;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.common.config.Property;
 import net.minecraftforge.oredict.OreDictionary;
 
-import java.io.File;
 import java.util.LinkedList;
 
 public class BlockOverride implements IOverride {

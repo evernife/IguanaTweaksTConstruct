@@ -1,18 +1,14 @@
 package iguanaman.iguanatweakstconstruct.override;
 
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
-import iguanaman.iguanatweakstconstruct.IguanaTweaksTConstruct;
 import iguanaman.iguanatweakstconstruct.reference.Reference;
 import iguanaman.iguanatweakstconstruct.util.Log;
 import mantle.pulsar.pulse.Handler;
 import mantle.pulsar.pulse.Pulse;
-import tconstruct.util.IMCHandler;
-
 import net.minecraftforge.common.ForgeHooks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
-
-import java.io.File;
+import tconstruct.util.IMCHandler;
 
 /**
  * Allows to override:

@@ -1,17 +1,14 @@
 package iguanaman.iguanatweakstconstruct.harvestlevels;
 
-import java.util.Collection;
-import java.util.HashSet;
-
-import cpw.mods.fml.common.Loader;
-import cpw.mods.fml.common.Mod;
 import iguanaman.iguanatweakstconstruct.reference.Config;
-import iguanaman.iguanatweakstconstruct.util.HarvestLevels;
 import iguanaman.iguanatweakstconstruct.util.Log;
 import iguanaman.iguanatweakstconstruct.util.ModSupportHelper;
 import tconstruct.library.TConstructRegistry;
 import tconstruct.library.tools.ToolMaterial;
 import tconstruct.tools.TinkerTools;
+
+import java.util.Collection;
+import java.util.HashSet;
 
 import static iguanaman.iguanatweakstconstruct.util.HarvestLevels.*;
 

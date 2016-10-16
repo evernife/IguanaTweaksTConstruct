@@ -4,7 +4,6 @@ import codechicken.lib.render.CCModel;
 import codechicken.lib.render.CCRenderState;
 import codechicken.lib.render.uv.UVTranslation;
 import codechicken.lib.vec.*;
-import codechicken.microblock.ItemSawRenderer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.IItemRenderer;

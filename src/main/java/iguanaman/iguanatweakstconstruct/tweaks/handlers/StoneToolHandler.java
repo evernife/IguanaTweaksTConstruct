@@ -1,8 +1,8 @@
 package iguanaman.iguanatweakstconstruct.tweaks.handlers;
 
 import cpw.mods.fml.common.eventhandler.Event;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.eventhandler.EventPriority;
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.StatCollector;
@@ -11,7 +11,6 @@ import tconstruct.library.TConstructRegistry;
 import tconstruct.library.event.ToolCraftEvent;
 import tconstruct.library.tools.ToolMaterial;
 import tconstruct.library.util.IToolPart;
-import tconstruct.tools.TinkerTools;
 import tconstruct.weaponry.TinkerWeaponry;
 import tconstruct.weaponry.ammo.ArrowAmmo;
 import tconstruct.weaponry.ammo.BoltAmmo;

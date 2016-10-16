@@ -1,6 +1,5 @@
 package iguanaman.iguanatweakstconstruct.override;
 
-import cpw.mods.fml.common.registry.GameRegistry;
 import iguanaman.iguanatweakstconstruct.reference.Config;
 import iguanaman.iguanatweakstconstruct.util.HarvestLevels;
 import iguanaman.iguanatweakstconstruct.util.Log;

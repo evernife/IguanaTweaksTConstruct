@@ -3,10 +3,8 @@ package iguanaman.iguanatweakstconstruct.claybuckets;
 import cpw.mods.fml.common.eventhandler.Event;
 import cpw.mods.fml.common.eventhandler.EventPriority;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import javafx.scene.layout.Priority;
 import mods.railcraft.common.plugins.forge.WorldPlugin;
 import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
 import net.minecraft.entity.passive.EntityCow;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
@@ -14,7 +12,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraftforge.event.entity.player.EntityInteractEvent;
 import net.minecraftforge.event.entity.player.FillBucketEvent;
-import net.minecraftforge.fluids.FluidRegistry;
 import tconstruct.smeltery.TinkerSmeltery;
 
 public class ClayBucketHandler {

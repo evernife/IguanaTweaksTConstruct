@@ -1,7 +1,6 @@
 package iguanaman.iguanatweakstconstruct.restriction;
 
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
-import iguanaman.iguanatweakstconstruct.IguanaTweaksTConstruct;
 import iguanaman.iguanatweakstconstruct.reference.Reference;
 import mantle.pulsar.pulse.Handler;
 import mantle.pulsar.pulse.Pulse;
@@ -11,7 +10,6 @@ import net.minecraftforge.common.MinecraftForge;
 import tconstruct.library.TConstructRegistry;
 import tconstruct.world.TinkerWorld;
 
-import java.io.File;
 import java.util.List;
 import java.util.Map;
 

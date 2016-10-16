@@ -1,7 +1,6 @@
 package iguanaman.iguanatweakstconstruct;
 
 import cpw.mods.fml.common.FMLCommonHandler;
-import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
@@ -10,10 +9,10 @@ import cpw.mods.fml.common.event.*;
 import cpw.mods.fml.common.registry.GameRegistry;
 import iguanaman.iguanatweakstconstruct.claybuckets.IguanaItems;
 import iguanaman.iguanatweakstconstruct.commands.CommandDumpOredict;
+import iguanaman.iguanatweakstconstruct.commands.CommandDumpTools;
 import iguanaman.iguanatweakstconstruct.commands.CommandIAmADirtyCheater;
 import iguanaman.iguanatweakstconstruct.debug.DebugCommand;
 import iguanaman.iguanatweakstconstruct.debug.IguanaDebug;
-import iguanaman.iguanatweakstconstruct.harvestlevels.HarvestLevelTweaks;
 import iguanaman.iguanatweakstconstruct.harvestlevels.IguanaHarvestLevelTweaks;
 import iguanaman.iguanatweakstconstruct.leveling.IguanaToolLeveling;
 import iguanaman.iguanatweakstconstruct.leveling.commands.IguanaCommandLevelUpTool;
@@ -26,7 +25,6 @@ import iguanaman.iguanatweakstconstruct.reference.Config;
 import iguanaman.iguanatweakstconstruct.reference.Reference;
 import iguanaman.iguanatweakstconstruct.replacing.IguanaToolPartReplacing;
 import iguanaman.iguanatweakstconstruct.restriction.IguanaPartRestriction;
-import iguanaman.iguanatweakstconstruct.commands.CommandDumpTools;
 import iguanaman.iguanatweakstconstruct.tweaks.IguanaTweaks;
 import iguanaman.iguanatweakstconstruct.util.HarvestLevels;
 import iguanaman.iguanatweakstconstruct.util.Log;
@@ -34,11 +32,8 @@ import iguanaman.iguanatweakstconstruct.worldgen.IguanaWorldGen;
 import mantle.pulsar.config.IConfiguration;
 import mantle.pulsar.control.PulseManager;
 import mantle.pulsar.pulse.PulseMeta;
-import net.minecraft.item.Item;
-import net.minecraftforge.common.MinecraftForge;
 
 import java.io.File;
-import java.util.List;
 import java.util.Random;
 
 @Mod(modid= Reference.MOD_ID, name= Reference.MOD_NAME, version="${version}",

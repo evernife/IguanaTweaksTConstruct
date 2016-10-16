@@ -2,7 +2,6 @@ package iguanaman.iguanatweakstconstruct.leveling;
 
 import iguanaman.iguanatweakstconstruct.IguanaTweaksTConstruct;
 import iguanaman.iguanatweakstconstruct.leveling.modifiers.ModCritical;
-import iguanaman.iguanatweakstconstruct.util.Log;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.Entity;

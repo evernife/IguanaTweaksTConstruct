@@ -1,21 +1,16 @@
 package iguanaman.iguanatweakstconstruct.worldgen;
 
 import iguanaman.iguanatweakstconstruct.leveling.RandomBonuses;
-import iguanaman.iguanatweakstconstruct.util.Log;
 import net.minecraft.init.Items;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.WeightedRandomChestContent;
-import net.minecraftforge.common.ChestGenHooks;
-import tconstruct.items.tools.Battleaxe;
-import tconstruct.items.tools.BowBase;
 import tconstruct.library.TConstructRegistry;
 import tconstruct.library.crafting.ToolBuilder;
 import tconstruct.library.crafting.ToolRecipe;
 import tconstruct.library.tools.ToolCore;
 import tconstruct.library.tools.ToolMaterial;
-import tconstruct.library.tools.Weapon;
 import tconstruct.library.util.IToolPart;
 import tconstruct.tools.TinkerTools;
 

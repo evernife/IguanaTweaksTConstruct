@@ -1,12 +1,10 @@
 package iguanaman.iguanatweakstconstruct.modcompat.fmp;
 
-import codechicken.microblock.BlockMicroMaterial;
 import codechicken.microblock.ItemSaw;
 import codechicken.microblock.Saw;
 import codechicken.microblock.handler.MicroblockProxy;
 import codechicken.multipart.handler.MultipartProxy;
 import cpw.mods.fml.common.SidedProxy;
-import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import iguanaman.iguanatweakstconstruct.IguanaTweaksTConstruct;
@@ -23,9 +21,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import tconstruct.library.TConstructRegistry;
 import tconstruct.library.tools.ToolMaterial;
-import tconstruct.smeltery.TinkerSmeltery;
 import tconstruct.tools.TinkerTools;
-import tconstruct.world.TinkerWorld;
 
 import java.lang.reflect.Field;
 

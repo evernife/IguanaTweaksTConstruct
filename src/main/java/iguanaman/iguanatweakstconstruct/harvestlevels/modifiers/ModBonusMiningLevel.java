@@ -1,16 +1,10 @@
 package iguanaman.iguanatweakstconstruct.harvestlevels.modifiers;
 
 import iguanaman.iguanatweakstconstruct.leveling.LevelingLogic;
-import iguanaman.iguanatweakstconstruct.reference.Config;
 import iguanaman.iguanatweakstconstruct.util.HarvestLevels;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.util.EnumChatFormatting;
 import tconstruct.library.modifier.ItemModifier;
-import tconstruct.modifiers.tools.ModBoolean;
-import tconstruct.modifiers.tools.ModDurability;
-
-import java.util.logging.Level;
 
 public class ModBonusMiningLevel extends ItemModifier {
     public final String parentTag;

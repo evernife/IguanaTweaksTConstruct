@@ -1,11 +1,10 @@
 package iguanaman.iguanatweakstconstruct.override;
 
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.event.entity.player.PlayerEvent;
-
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 
 // This class handles harvest levels on the same block but where some metadata requires a tool,
 // and some metadatas don't

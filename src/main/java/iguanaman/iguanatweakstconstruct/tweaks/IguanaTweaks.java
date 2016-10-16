@@ -1,7 +1,6 @@
 package iguanaman.iguanatweakstconstruct.tweaks;
 
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
-import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import iguanaman.iguanatweakstconstruct.reference.Config;
 import iguanaman.iguanatweakstconstruct.reference.Reference;
@@ -32,7 +31,6 @@ import tconstruct.smeltery.TinkerSmeltery;
 import tconstruct.tools.TinkerTools;
 import tconstruct.world.TinkerWorld;
 
-import java.lang.reflect.Field;
 import java.util.*;
 
 /**

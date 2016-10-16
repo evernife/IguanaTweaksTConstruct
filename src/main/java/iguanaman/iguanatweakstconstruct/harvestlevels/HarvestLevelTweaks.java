@@ -15,7 +15,6 @@ import net.minecraftforge.oredict.OreDictionary;
 import tconstruct.world.blocks.GravelOre;
 
 import java.lang.reflect.Field;
-import java.util.LinkedList;
 
 /**
  * Used to modify the harvest levels of all known/findable tools and blocks. Vanilla and modded.

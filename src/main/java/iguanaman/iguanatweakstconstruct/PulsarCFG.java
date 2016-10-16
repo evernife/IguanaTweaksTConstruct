@@ -1,7 +1,5 @@
 package iguanaman.iguanatweakstconstruct;
 
-import cpw.mods.fml.common.Loader;
-import mantle.pulsar.config.ForgeCFG;
 import mantle.pulsar.config.IConfiguration;
 import mantle.pulsar.pulse.PulseMeta;
 import net.minecraftforge.common.config.Configuration;

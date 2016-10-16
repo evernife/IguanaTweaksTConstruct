@@ -11,10 +11,6 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.util.StatCollector;
-
-import java.util.Arrays;
-
 import tconstruct.TConstruct;
 import tconstruct.library.TConstructRegistry;
 import tconstruct.library.crafting.ModifyBuilder;
@@ -26,12 +22,12 @@ import tconstruct.library.tools.ToolCore;
 import tconstruct.library.tools.ToolMaterial;
 import tconstruct.library.weaponry.IAmmo;
 import tconstruct.modifiers.tools.ModAttack;
-import tconstruct.modifiers.tools.ModButtertouch;
 import tconstruct.modifiers.tools.ModRedstone;
 import tconstruct.tools.TinkerTools;
-import tconstruct.tools.logic.ToolStationLogic;
 import tconstruct.util.config.PHConstruct;
 import tconstruct.weaponry.TinkerWeaponry;
+
+import java.util.Arrays;
 
 import static iguanaman.iguanatweakstconstruct.replacing.ReplacementLogic.PartTypes.*;
 

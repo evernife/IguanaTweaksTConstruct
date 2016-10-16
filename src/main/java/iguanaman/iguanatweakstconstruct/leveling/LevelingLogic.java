@@ -1,19 +1,12 @@
 package iguanaman.iguanatweakstconstruct.leveling;
 
-import static iguanaman.iguanatweakstconstruct.replacing.ReplacementLogic.PartTypes.ACCESSORY;
-import static iguanaman.iguanatweakstconstruct.replacing.ReplacementLogic.PartTypes.EXTRA;
-import static iguanaman.iguanatweakstconstruct.replacing.ReplacementLogic.PartTypes.HANDLE;
-import static iguanaman.iguanatweakstconstruct.replacing.ReplacementLogic.PartTypes.HEAD;
 import iguanaman.iguanatweakstconstruct.override.XPAdjustmentMap;
 import iguanaman.iguanatweakstconstruct.reference.Config;
 import iguanaman.iguanatweakstconstruct.reference.Reference;
 import iguanaman.iguanatweakstconstruct.replacing.ReplacementLogic;
-import iguanaman.iguanatweakstconstruct.replacing.ReplacementLogic.PartTypes;
 import iguanaman.iguanatweakstconstruct.util.HarvestLevels;
-
 import net.minecraft.entity.item.EntityXPOrb;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
@@ -23,11 +16,9 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import tconstruct.items.tools.*;
 import tconstruct.library.TConstructRegistry;
-import tconstruct.library.tools.HarvestTool;
 import tconstruct.library.tools.ToolCore;
-import tconstruct.library.tools.Weapon;
 
-import javax.tools.Tool;
+import static iguanaman.iguanatweakstconstruct.replacing.ReplacementLogic.PartTypes.*;
 
 /**
  * Utility class that takes care of all the Tool XP related things.

@@ -1,6 +1,5 @@
 package iguanaman.iguanatweakstconstruct.leveling.handlers;
 
-import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.eventhandler.EventPriority;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import iguanaman.iguanatweakstconstruct.OldToolConversionHandler;

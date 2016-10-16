@@ -1,11 +1,8 @@
 package iguanaman.iguanatweakstconstruct.util;
 
-import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.StatCollector;
-import tconstruct.TConstruct;
 import tconstruct.library.tools.ToolMaterial;
 
-import java.util.List;
 import java.util.Map;
 
 import static net.minecraft.util.EnumChatFormatting.*;

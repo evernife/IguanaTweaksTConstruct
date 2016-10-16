@@ -6,11 +6,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.world.World;
 import net.minecraftforge.oredict.RecipeSorter;
-import tconstruct.library.TConstructRegistry;
 import tconstruct.library.crafting.PatternBuilder;
-import tconstruct.library.tools.ToolCore;
 import tconstruct.library.util.IPattern;
-import tconstruct.tools.items.Pattern;
 
 public class PartCraftingRecipe implements IRecipe {
     static {
