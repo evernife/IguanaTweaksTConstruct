@@ -1,9 +1,11 @@
 package iguanaman.iguanatweakstconstruct.leveling.handlers;
 
+import cpw.mods.fml.common.eventhandler.EventPriority;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.PlayerEvent;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import iguanaman.iguanatweakstconstruct.integration.ModHookEventHelper;
 import iguanaman.iguanatweakstconstruct.leveling.LevelingLogic;
 import iguanaman.iguanatweakstconstruct.leveling.LevelingTooltips;
 import iguanaman.iguanatweakstconstruct.leveling.RandomBonuses;
@@ -33,9 +35,11 @@ import tconstruct.weaponry.weapons.Shuriken;
 import java.util.Arrays;
 
 public class LevelingEventHandler {
-    @SubscribeEvent
-    public void onHurt (LivingHurtEvent event)
-    {
+    @SubscribeEvent(priority = EventPriority.LOW)
+    public void onHurt (LivingHurtEvent event){
+        if(event.isCanceled()) {
+            return;
+        }
         // only player caused damage
         if (!(event.source.damageType.equals("player") || event.source.damageType.equals("arrow")))
             return;
@@ -66,6 +70,10 @@ public class LevelingEventHandler {
 
         if(stack.getItem() == null || !(stack.getItem() instanceof ToolCore))
             return;
+
+        if(!player.worldObj.isRemote && ModHookEventHelper.cantAttack(player,event.entityLiving)){
+            return;
+        }
 
         int xp = 0;
         // is a weapon?
@@ -159,6 +167,10 @@ public class LevelingEventHandler {
         if(player instanceof FakePlayer) return;
 
         // can hoe?
+        if(!player.worldObj.isRemote && ModHookEventHelper.cantBreak(player,event.x, event.y, event.z)){
+            return;
+        }
+
         Block block = event.world.getBlock(event.x, event.y, event.z);
         Block blockAbove = event.world.getBlock(event.x, event.y+1, event.z);
         if (blockAbove.isAir(event.world, event.x, event.y+1, event.z) && (block == Blocks.grass || block == Blocks.dirt)) {

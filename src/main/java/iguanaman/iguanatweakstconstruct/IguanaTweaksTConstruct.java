@@ -14,6 +14,7 @@ import iguanaman.iguanatweakstconstruct.commands.CommandIAmADirtyCheater;
 import iguanaman.iguanatweakstconstruct.debug.DebugCommand;
 import iguanaman.iguanatweakstconstruct.debug.IguanaDebug;
 import iguanaman.iguanatweakstconstruct.harvestlevels.IguanaHarvestLevelTweaks;
+import iguanaman.iguanatweakstconstruct.integration.ModHookEventHelper;
 import iguanaman.iguanatweakstconstruct.leveling.IguanaToolLeveling;
 import iguanaman.iguanatweakstconstruct.leveling.commands.IguanaCommandLevelUpTool;
 import iguanaman.iguanatweakstconstruct.leveling.commands.IguanaCommandToolXP;
@@ -112,6 +113,7 @@ public class IguanaTweaksTConstruct {
 	@EventHandler
 	public void load(FMLInitializationEvent event) {
         pulsar.init(event);
+        ModHookEventHelper.initialize();
 	}
 
 	@EventHandler
